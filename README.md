@@ -11,7 +11,7 @@ A curated list of awesome [streaming (stream processing)](http://radar.oreilly.c
 - [DSL](#dsl)
 - [Data Pipeline](#data-pipeline)
 - [Online Machine Learning](#online-machine-learning)
-- [Stream SQL](#stream-sql)
+- [Streaming SQL](#streaming-sql)
 - [Toolkit](#toolkit)
 - [Benchmark](#benchmark)
 - [Readings](#readings)
@@ -31,21 +31,22 @@ A curated list of awesome [streaming (stream processing)](http://radar.oreilly.c
 * [mantis](http://www.slideshare.net/g9yuayon/qcon-talk-on-netflix-mantis-a-stream-processing-system) - Netflix's event stream processing system.
 * [millwheel](http://research.google.com/pubs/pub41378.html) - framework for building low-latency data-processing applications that is widely used at Google.
 * [mupd8(muppet)](https://github.com/walmartlabs/mupd8) [Scala/Java] - mapReduce-style framework for processing fast/streaming data.
-* [pulsar](http://gopulsar.io/) [Java] - an open-source, real-time analytics platform and stream processing framework.
 * [s4](http://incubator.apache.org/s4/) [Java] - general-purpose, distributed, scalable, fault-tolerant, pluggable platform that allows programmers to easily develop applications for processing continuous unbounded streams of data.
 * [SPQR](https://github.com/ottogroup/SPQR) [Java] - dynamic framework for processing high volumn data streams through pipelines.
 * [tigon](https://github.com/caskdata/tigon) [C++/Java] - high throughput real-time streaming processing framework built on Hadoop and HBase.
 * [hailstorm](https://github.com/hailstorm-hs/hailstorm) [Haskell] - distributed stream processing with exactly-once semantics based on Storm.
 * [Teknek](https://github.com/edwardcapriolo/teknek-core) [Java] - Simple elegant stream processing with interactive prototying shell SOL (Stream Operator Language)
 * [concord](http://concord.io/) [C++] - a distributed stream processing framework built in C++ on top of Apache Mesos, designed for high performance data processing jobs that require flexibility & control.
+* [StreamBox](https://engineering.purdue.edu/~xzl/xsel/p/streambox/) - a modern stream processing engine which can handle out-of-order streaming data and achieve high throughput with low latency.
+* [Wallaroo](http://www.wallaroolabs.com/community) [Python] - The ultrafast and elastic data processing engine. Big or fast data - no fuss, no Java needed.
 
 ### Streaming Library
 * [IBM Streams](https://www.ibm.com/analytics/us/en/technology/stream-computing/) [Python/Java/Scala] - platform for distributed processing and real-time analytics. Provides toolkits for advanced analytics like geospatial, time series, etc. out of the box.
 * [Apache Kafka Streams](http://kafka.apache.org/documentation#streams) [Java] - lightweight stream processing library included in Apache Kafka (since 0.10 version).
 * [Akka Streams](http://doc.akka.io/docs/akka/2.4.16/scala/stream/stream-introduction.html) [Scala] - stream processing library on Akka Actors. 
-* [Swave](http://swave.io/) [Scala] - A lightweight Reactive Streams Infrastructure Toolkit for Scala.
+* [Swave](http://swave.cc/) [Scala] - A lightweight Reactive Streams Infrastructure Toolkit for Scala.
 * [FS2(prev. 'Scalaz-Stream')](https://github.com/functional-streams-for-scala/fs2) [Scala] - Compositional, streaming I/O library for Scala.
-* [monifu](https://github.com/monifu/monifu) [Scala] - high-performance Scala / Scala.js library for composing asynchronous and event-based programs.
+* [monix](https://github.com/monix/monix) [Scala] - high-performance Scala / Scala.js library for composing asynchronous and event-based programs.
 
 ### Streaming Application
 
@@ -62,16 +63,19 @@ A curated list of awesome [streaming (stream processing)](http://radar.oreilly.c
 * [coast](https://github.com/bkirwi/coast) [Scala] - a DSL that builds DAGs on top of Samza and provides exactly-once semantics.
 * [Apache Beam](https://github.com/apache/incubator-beam) [Java] - unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs), open sourced by Google.
 * [Esper](https://github.com/espertechinc/esper) [Java] - component for complex event processing (CEP) and event series analysis.
+* [Streamparse](https://github.com/Parsely/streamparse) [Python] - lets you run Python code against real-time streams of data via Apache Storm.
 
 ### Data Pipeline
 
 * [Apache Kafka](https://github.com/apache/kafka) [Scala/Java] - distributed, partitioned, replicated commit log service, which provides the functionality of a messaging system, but with a unique design.
+* [Apache Pulsar](https://github.com/apache/incubator-pulsar) [Java] - distributed pub-sub messaging platform with a very flexible messaging model and an intuitive client API.
 * [metaq](https://github.com/killme2008/Metamorphosis) [Java] - Taobao's high available, high performance distributed messaging system
 * [nsq](https://github.com/bitly/nsq) [Go] - realtime distributed messaging platform designed to operate at scale, handling billions of messages per day.
 * [NATS streaming](https://github.com/nats-io/nats-streaming-server) [Go] - fast disk-backed messaging solution
 * [camus](https://github.com/linkedin/camus) [Java] - Linkedin's Kafka -> HDFS pipeline.
 * [databus](https://github.com/linkedin/databus) [Java] - Linkedin's source-agnostic distributed change data capture system.
 * [flume](https://github.com/apache/flume) [Java] - distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data.
+* [Redis Streams](http://antirez.com/news/114) - Redis implementation of a unified log structure
 * [suro](https://github.com/Netflix/suro) [Java] - data pipeline service for collecting, aggregating, and dispatching large volume of application events including log data.
 * [StreamSets Data Collector](https://github.com/streamsets/datacollector) [Java] - continuous big data ingestion infrastructure that reads from and writes to a large number of end-points, including S3, JDBC, Hadoop, Kafka, Cassandra and many others.
 
@@ -85,11 +89,13 @@ A curated list of awesome [streaming (stream processing)](http://radar.oreilly.c
 * [DataSketches](https://github.com/DataSketches/sketches-core) [Java] - sketches library from Yahoo!.
 * [StreamingBandit](https://github.com/MKaptein/streamingbandit) [Python] - Provides a webserver to quickly setup and evaluate possible solutions to contextual multi-armed bandit (cMAB) problems.
 
-### Stream SQL
+### Streaming SQL
 
 * [pipelinedb](https://github.com/pipelinedb/pipelinedb) [C] - An open-source relational database that runs SQL queries continuously on streams, incrementally storing results in tables.
 * [squall](https://github.com/epfldata/squall) [Java] - Squall executes SQL queries on top of Storm for doing online processing.
 * [StreamCQL](https://github.com/HuaweiBigData/StreamCQL) [Java] - Continuous Query Language on RealTime Computation System.
+* [KSQL](https://github.com/confluentinc/ksql) [Java] - a Streaming SQL Engine for Apache Kafka.
+
 
 ### Benchmark
 
