@@ -41,6 +41,7 @@ A curated list of awesome [streaming (stream processing)](http://radar.oreilly.c
 * [Wallaroo](https://github.com/WallarooLabs/wallaroo) [Python] - The ultrafast and elastic data processing engine. Big or fast data - no fuss, no Java needed.
 * [SABER](https://github.com/lsds/Saber) [Java/C] - Window-Based Hybrid CPU/GPU Stream Processing Engine.
 * [Onyx](https://github.com/onyx-platform/onyx) [Clojure] - Distributed, masterless, high performance, fault tolerant data processing.
+* [AthenaX](https://github.com/uber/AthenaX) [Java] - Uber's Stream Analytics Framework used in production
 
 ### Streaming Library
 * [IBM Streams](https://www.ibm.com/analytics/us/en/technology/stream-computing/) [Python/Java/Scala] - platform for distributed processing and real-time analytics. Provides toolkits for advanced analytics like geospatial, time series, etc. out of the box.
@@ -51,6 +52,7 @@ A curated list of awesome [streaming (stream processing)](http://radar.oreilly.c
 * [monix](https://github.com/monix/monix) [Scala] - high-performance Scala / Scala.js library for composing asynchronous and event-based programs.
 * [Benthos](https://github.com/Jeffail/benthos) [Go] - Benthos is a high performance and resilient message streaming service, able to connect various sources and sinks and perform arbitrary actions, transformations and filters on payloads
 * [Bistro Streams](https://github.com/asavinov/bistro) [Java] - a light-weight stream processing library which does for stream analytics what column stores did for databases by radically changing the way (stream) data is processed.
+* [Streamline](https://github.com/hortonworks/streamline) [Java] - Stream Analytics Framework by Hortonworks, designed as a wrapper around existing streaming solutions like Storm. Aimed to allow users to drag-and-drop streaming components to focus on business logic.
 
 ### Streaming Application
 
